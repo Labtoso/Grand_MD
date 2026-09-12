@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MD Abmeldung &ndash; Grand RP</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Unbounded:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page">
+    <header class="page-header">
+      <h1>MD Abmeldung</h1>
+      <p class="subtitle">Grand RP</p>
+    </header>
+
+    <div class="panels">
+      <section class="panel">
+        <h2>Deine Angaben</h2>
+
+        <label class="field">
+          <span class="field-label">Name</span>
+          <input type="text" id="name" autocomplete="off">
+        </label>
+
+        <label class="field">
+          <span class="field-label">Reisepassnummer</span>
+          <input type="text" id="passnummer" autocomplete="off">
+        </label>
+
+        <div class="divider"></div>
+
+        <button type="button" id="eintragenBtn" class="secondary-btn">Eintragszeit erneuern</button>
+
+        <div class="divider"></div>
+
+        <button type="button" id="austragenBtn" class="secondary-btn" aria-pressed="false">Jetzt austragen</button>
+      </section>
+
+      <section class="panel">
+        <h2>Dein Text</h2>
+
+        <pre id="output" class="output"></pre>
+
+        <button id="copyBtn" class="copy-btn" type="button" disabled>Text kopieren</button>
+      </section>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
